@@ -67,6 +67,7 @@ def get_product_data(last_page, first_url):     #GOOD #TODO Some of the saved Da
                 'rated': product_details['rated'],
                 'price': product_details['price'],
                 'stock': product_details['stock'],
+                'link': product_page,
                 'count_images': product_details['count_images'],
                 'warning_text': product_details['warning_text'],
                 'description': product_details['description'],
@@ -78,7 +79,7 @@ def get_product_data(last_page, first_url):     #GOOD #TODO Some of the saved Da
     product_detail = pd.DataFrame(product_row)
     product_detail.to_csv('products.csv', index=True, header=[
         'title', 'subtitle', 'brand', 'serie', 'rating', 'rated', 'price', 
-        'stock', 'count_images', 'warning_text', 'description'])
+        'stock', 'link', 'count_images', 'warning_text', 'description'])
 
 
 
