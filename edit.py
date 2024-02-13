@@ -1,7 +1,7 @@
 from datetime import datetime
 import pandas as pd
 
-date = datetime.today().strftime('%d%m%-y')
+date = datetime.today().strftime('%d%m-%y')
 
 def clear_garbage(search_name):
         
